@@ -10,8 +10,6 @@ This project has two parts:
 
 Check [Release page](https://github.com/LongQT-sea/mkmaciso/releases/tag/forks-list) first - someone might've already built what you need.
 
-If you only need the macOS Recovery ISO, building it yourself is probably faster: [How to use](#how-to-use-this)
-
 ## What images can you create?
 
 **ISO files** - These work great for VMs (Proxmox, QEMU, VirtualBox, VMware). Just attach them like a virtual DVD. They're hybrid UDF/HFS format, so they'll even mount in Windows if you need to poke around inside.
@@ -24,7 +22,7 @@ Pretty much everything from Lion (10.7, 2011) through the latest Tahoe (26, 2025
 
 Lion, Mountain Lion, Mavericks, Yosemite, El Capitan, Sierra, High Sierra, Mojave, Catalina, Big Sur, Monterey, Ventura, Sonoma, Sequoia, Tahoe.
 
-## How to use this
+## How to use
 
 ### Don't have macOS? Use GitHub Actions
 

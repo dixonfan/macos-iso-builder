@@ -19,13 +19,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          THIRTY_DAYS_AGO=$(date -u -d '15 days ago' +%Y-%m-%dT%H:%M:%SZ)
+          PAST_15_DAYS=$(date -u -d '15 days ago' +%Y-%m-%dT%H:%M:%SZ)
           
           curl -s -H "Accept: application/vnd.github.v3+json" \
             "https://api.github.com/repos/${{ github.repository }}/forks?sort=newest&per_page=100" \
             > forks.json
           
-          jq --arg date "$THIRTY_DAYS_AGO" \
+          jq --arg date "$PAST_15_DAYS" \
             '[.[] | select(.created_at > $date) | {
               owner: .owner.login,
               name: .name,
@@ -127,7 +127,7 @@ jobs:
           
           If none of the recent forks have the macOS version you need:
           1. [Fork this repository](../../fork)
-          2. Follow the [Usage guide](../../?tab=readme-ov-file#how-to-use-this) to build your own image
+          2. Follow the [Usage guide](../../#how-to-use) to build your own image
           3. Your fork will appear here for others to benefit from!
           EOF
       
