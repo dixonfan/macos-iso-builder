@@ -1,4 +1,5 @@
 made by DIXONFAN
+Please Note , Versions After Mac 26 Tahoe Will Only Run On Apple Silicon Proccesors Ending The Hackintosh Era
 # Overview
 
 Build bootable macOS installer images without needing a Mac.
