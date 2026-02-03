@@ -1,5 +1,6 @@
 made by DIXONFAN
 Please Note , Versions After Mac 26 Tahoe Will Only Run On Apple Silicon Proccesors Ending The Hackintosh Era
+ALSO CHECK OUT MY LATEST OPERATING SYSTEM : PROJECT ESSENTIAL [Click Here To Check Out My Nothing OS Based OS ](https://github.com/project-essential-distro-)
 # Overview
 
 Build bootable macOS installer images without needing a Mac.
